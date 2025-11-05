@@ -1,0 +1,14 @@
+duckdb
+dlt
+pandas
+numpy
+oracledb
+pymongo
+requests
+openpyxl
+pyarrow
+scikit-learn
+matplotlib
+sqlalchemy
+pyodbc
+mssql-python
