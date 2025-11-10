@@ -1,15 +1,11 @@
 {
   "name": "Python 3 (Offline)",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
-  },
+  "image": "devcontainer-offline:latest",
+  // "build": {
+  //   "dockerfile": "Dockerfile",
+  //   "context": "."
+  // },
   "remoteUser": "vscode",
-
-  // DO NOT run installs after create - all dependencies are pre-installed in image
-  // "postCreateCommand": "",
-
-  // Keep VS Code extensions running on the HOST (UI) so nothing installs in the container
   "customizations": {
     "vscode": {
       "settings": {
@@ -24,8 +20,6 @@
       ]
     }
   },
-
-  // Quality-of-life
   "updateRemoteUserUID": "on",
   "overrideCommand": false
 }

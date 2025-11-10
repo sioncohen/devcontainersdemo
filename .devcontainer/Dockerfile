@@ -16,3 +16,6 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Set a reasonable workdir for VS Code
 WORKDIR /workspaces/app
+
+# Keep container running (VS Code will override this)
+CMD ["sleep", "infinity"]
